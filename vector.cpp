@@ -29,5 +29,11 @@ int main() {
     printVector(v1);
     printVector(v);
 
+    vector<int> sv = {41, 4, 2, 4};
+    sort(sv.begin(), sv.end(), greater<int>());  // sorting in descending
+    for (int i = 0; i < sv.size(); i++) {
+        cout << sv[i] << " ";
+    }
+
     return 0;
 }
